@@ -6,7 +6,6 @@ MAINTAINER juaxix <jbelon@cvc.uab.es>
 #ADD NVIDIA-Linux-x86_64-340.76.run /tmp/NVIDIA-DRIVER.run
 RUN apt-get update 
 RUN apt-get -yq install mono-complete build-essential \
-  libmono-corlib4.0-cil libmono-system-data-datasetextensions4.0-cil \
   mono-reference-assemblies-4.0 mono-devel mono-xbuild mono-mcs mono-devel \
   cmake dos2unix clang-3.5 libfreetype6-dev \
   libgtk-3-dev xdg-user-dirs pulseaudio alsa-utils \
