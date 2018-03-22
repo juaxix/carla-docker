@@ -7,10 +7,9 @@ MAINTAINER juaxix <jbelon@cvc.uab.es>
 RUN apt-get update 
 RUN apt-get -yq install mono-complete build-essential \
   libmono-corlib4.0-cil libmono-system-data-datasetextensions4.0-cil \
-  libmono-system-web-extensions4.0-cil libmono-system-management4.0-cil \
-  libmono-system-xml-linq4.0-cil cmake dos2unix clang-3.5 libfreetype6-dev \
-  libgtk-3-dev libmono-microsoft-build-tasks-v4.0-4.0-cil \
-  xdg-user-dirs pulseaudio alsa-utils \
+  mono-reference-assemblies-4.0 mono-devel mono-xbuild mono-mcs mono-devel \
+  cmake dos2unix clang-3.5 libfreetype6-dev \
+  libgtk-3-dev xdg-user-dirs pulseaudio alsa-utils \
   x11-apps libclang-common-3.5-dev libclang1-3.5 libllvm3.5v5 llvm-3.5 \
   llvm-3.5-dev llvm-3.5-runtime libgtk-3-0 git codelite wxcrafter
 
