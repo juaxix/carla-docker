@@ -12,14 +12,13 @@ RUN apt-get -yq install mono-complete build-essential \
   x11-apps libclang-common-3.5-dev libclang1-3.5 libllvm3.5v5 llvm-3.5 \
   llvm-3.5-dev llvm-3.5-runtime libgtk-3-0 git 
 
-Add UnrealEngine ~/UnrealEngine_4.18
-
 #Add user `unreal`
 RUN useradd -ms /bin/bash unreal
 RUN adduser unreal sudo
 RUN git clone --depth=1 -b 4.18 https://github.com/EpicGames/UnrealEngine.git ~/UnrealEngine_4.18
+ADD UnrealEngine ~/UnrealEngine_4.18
 #RUN ./Setup.sh --> this is run on the host to safe time on the docker build and rebuild in case you need to add dependecies
-WORKDIR /UnrealEngine_4.18
+WORKDIR ~/UnrealEngine_4.18
 CMD ~/UnrealEngine_4.18
 RUN ~/UnrealEngine_4.18/Setup.sh
 RUN ~/UnrealEngine_4.18/GenerateProjectFiles.sh
