@@ -5,7 +5,7 @@ MAINTAINER juaxix <jbelon@cvc.uab.es>
 #Add display driver
 #ADD NVIDIA-Linux-x86_64-340.76.run /tmp/NVIDIA-DRIVER.run
 RUN apt-get update 
-RUN apt-get install mono-complete=3.12.1 apt-get install -yq build-essential \
+RUN apt-get install mono-complete apt-get install -yq build-essential \
   libmono-corlib4.0-cil libmono-system-data-datasetextensions4.0-cil \
   libmono-system-web-extensions4.0-cil libmono-system-management4.0-cil \
   libmono-system-xml-linq4.0-cil cmake dos2unix clang-3.5 libfreetype6-dev \
