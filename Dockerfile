@@ -10,7 +10,7 @@ RUN apt-get -yq install mono-complete build-essential \
   cmake dos2unix clang-3.5 libfreetype6-dev \
   libgtk-3-dev xdg-user-dirs pulseaudio alsa-utils \
   x11-apps libclang-common-3.5-dev libclang1-3.5 libllvm3.5v5 llvm-3.5 \
-  llvm-3.5-dev llvm-3.5-runtime libgtk-3-0 git codelite wxcrafter
+  llvm-3.5-dev llvm-3.5-runtime libgtk-3-0 git 
 
 Add UnrealEngine ~/UnrealEngine_4.18
 
