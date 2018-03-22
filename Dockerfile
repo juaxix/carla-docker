@@ -2,9 +2,6 @@ FROM ubuntu:16.04
 
 MAINTAINER juaxix <jbelon@cvc.uab.es>
 
-ARG git_username=juaxix
-ARG git_token=YOUR_GIT_ACCESS_TOKEN
-
 #Add display driver
 #ADD NVIDIA-Linux-x86_64-340.76.run /tmp/NVIDIA-DRIVER.run
 RUN apt-get update 
