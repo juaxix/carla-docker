@@ -3,8 +3,9 @@ FROM ubuntu:latest
 MAINTAINER Juan Belón <jbelon@cvc.uab.es>
 
 #Configure system
-RUN apt-get update && apt-get install -y git sudo tzdata && rm -rf /var/lib/apt/lists/*
-RUN apt-get install build-essential clang-3.9 git cmake ninja-build python3-pip python3-requests python-dev tzdata sed curl wget unzip autoconf libtool
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
+RUN apt-get install -y git sudo tzdata && rm -rf /var/lib/apt/lists/*
+RUN apt-get install -y build-essential clang-3.9 git cmake ninja-build python3-pip python3-requests python-dev tzdata sed curl wget unzip autoconf libtool
 RUN pip3 install protobuf
 RUN update-alternatives --install /usr/bin/clang++ clang++ /usr/lib/llvm-3.9/bin/clang++ 100
 RUN update-alternatives --install /usr/bin/clang clang /usr/lib/llvm-3.9/bin/clang 100
