@@ -8,7 +8,7 @@ ENV git_token=${git_token}
 ENV git_username=${git_username}
 
 #add a nameserver in the case you are in a weird lan
-RUN echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf > /dev/null
+RUN echo "nameserver 8.8.8.8" | tee /etc/resolv.conf > /dev/null
 
 #Add display driver
 #ADD NVIDIA-Linux-x86_64-340.76.run /tmp/NVIDIA-DRIVER.run
