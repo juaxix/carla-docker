@@ -8,7 +8,7 @@ ENV git_token=${git_token}
 ENV git_username=${git_username}
 
 #Add display driver
-ADD NVIDIA-Linux-x86_64-340.76.run /tmp/NVIDIA-DRIVER.run
+#ADD NVIDIA-Linux-x86_64-340.76.run /tmp/NVIDIA-DRIVER.run
 RUN apt-get update 
 RUN apt-get -yq install mono-complete build-essential \
   mono-reference-assemblies-4.0 mono-devel mono-xbuild mono-mcs mono-devel \
