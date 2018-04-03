@@ -5,9 +5,9 @@ ENV git_username juaxix
 ENV git_token none
 RUN mkdir ~/${git_username}
 WORKDIR ~/${git_username}
-CMD echo "${git_token}" > ~/{git_username}/gittoken
+CMD echo "${git_token}" > ~/${git_username}.gittoken
 CMD ls -lha ~/${git_username}
-CMD cat ~/${git_username}.${git_token}
+CMD cat ~/${git_username}.gittoken
 #Add display driver
 #ADD NVIDIA-Linux-x86_64-340.76.run /tmp/NVIDIA-DRIVER.run
 #RUN apt-get update 
