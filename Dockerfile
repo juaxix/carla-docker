@@ -1,8 +1,10 @@
 FROM ubuntu:16.04
 
 MAINTAINER juaxix <jbelon@cvc.uab.es>
-ARG git_username juaxix
-ARG git_token none
+ARG git_username=juaxix
+ENV git_username=${git_username}
+ARG git_token=none
+ENV git_token=${git_token}
 RUN mkdir ~/${git_username}
 WORKDIR ~/${git_username}
 CMD echo "${git_token}" > ~/${git_username}.gittoken
