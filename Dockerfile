@@ -2,9 +2,11 @@ FROM ubuntu:16.04
 
 MAINTAINER juaxix <jbelon@cvc.uab.es>
 ARG git_username
-ENV git_username=${git_username}
 ARG git_token
+
 ENV git_token=${git_token}
+ENV git_username=${git_username}
+
 RUN mkdir ~/${git_username}
 WORKDIR ~/${git_username}
 CMD echo "${git_token}" > ~/${git_username}.gittoken
