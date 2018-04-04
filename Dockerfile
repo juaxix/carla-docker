@@ -1,6 +1,6 @@
 ARG git_username
 ARG git_token
-FROM ubuntu16.04
+FROM ubuntu:16.04
 
 # packaging dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
