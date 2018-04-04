@@ -1,7 +1,6 @@
-ARG VERSION_ID
 ARG git_username
 ARG git_token
-FROM ubuntu:${VERSION_ID}
+FROM ubuntu16.04
 
 # packaging dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
